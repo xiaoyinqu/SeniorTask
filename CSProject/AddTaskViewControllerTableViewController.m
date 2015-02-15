@@ -10,13 +10,21 @@
 
 @interface AddTaskViewControllerTableViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextField *dateEntered;
+@property (weak, nonatomic) IBOutlet UITableViewCell *datePicker;
+
+@property (weak, nonatomic) IBOutlet UITextField *taskName;
+@property (weak, nonatomic) IBOutlet UITableViewCell *priorityValue;
+@property (weak, nonatomic) IBOutlet UIButton *createNewTask;
 @end
 
 @implementation AddTaskViewControllerTableViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -39,8 +47,24 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 3;
+    return 4;
 }
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 44;
+}
+
+
+
+/**- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 1 && indexPath.row == 3) {
+        return 66;
+    }
+    return 22;
+}
+**/
+
 
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
