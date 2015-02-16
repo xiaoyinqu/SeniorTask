@@ -10,9 +10,10 @@
 
 @interface AddTaskViewControllerTableViewController ()
 
-@property (weak, nonatomic) IBOutlet UITextField *dateEntered;
-@property (weak, nonatomic) IBOutlet UITableViewCell *datePicker;
+@property (weak, nonatomic) IBOutlet UITableViewCell *pickDateCell;
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
 
+@property (weak, nonatomic) IBOutlet UITextField *dateEntered;
 @property (weak, nonatomic) IBOutlet UITextField *taskName;
 @property (weak, nonatomic) IBOutlet UITableViewCell *priorityValue;
 @property (weak, nonatomic) IBOutlet UIButton *createNewTask;
@@ -21,16 +22,25 @@
 @implementation AddTaskViewControllerTableViewController
 
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
+- (IBAction)onClickDatePicker:(UIDatePicker *)sender {
+    NSDate *myDate = self.datePicker.date;
+    
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"cccc, MMM d, hh:mm aa"];
+    NSString *prettyVersion = [dateFormat stringFromDate:myDate];
+    self.dateEntered.text = prettyVersion;
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
