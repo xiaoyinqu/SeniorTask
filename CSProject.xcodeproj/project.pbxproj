@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D314F751A91BD4E0000AD03 /* TaskListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D314F741A91BD4E0000AD03 /* TaskListTableViewController.m */; };
+		9D314F771A91BE130000AD03 /* TaskTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D314F761A91BE130000AD03 /* TaskTableCell.xib */; };
+		9D314F7A1A91BF310000AD03 /* taskListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D314F791A91BF310000AD03 /* taskListTableViewCell.m */; };
 		9D7FB9BD1A8477FA009DAB74 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7FB9BC1A8477FA009DAB74 /* main.m */; };
 		9D7FB9C01A8477FA009DAB74 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7FB9BF1A8477FA009DAB74 /* AppDelegate.m */; };
 		9D7FB9C31A8477FA009DAB74 /* CSProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D7FB9C11A8477FA009DAB74 /* CSProject.xcdatamodeld */; };
@@ -30,6 +33,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D314F731A91BD4E0000AD03 /* TaskListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskListTableViewController.h; sourceTree = "<group>"; };
+		9D314F741A91BD4E0000AD03 /* TaskListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskListTableViewController.m; sourceTree = "<group>"; };
+		9D314F761A91BE130000AD03 /* TaskTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskTableCell.xib; sourceTree = "<group>"; };
+		9D314F781A91BF310000AD03 /* taskListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = taskListTableViewCell.h; sourceTree = "<group>"; };
+		9D314F791A91BF310000AD03 /* taskListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = taskListTableViewCell.m; sourceTree = "<group>"; };
 		9D7FB9B71A8477FA009DAB74 /* CSProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D7FB9BB1A8477FA009DAB74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D7FB9BC1A8477FA009DAB74 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -98,6 +106,11 @@
 				9D7FB9E31A847FAA009DAB74 /* AddTaskViewControllerTableViewController.h */,
 				9D7FB9E41A847FAB009DAB74 /* AddTaskViewControllerTableViewController.m */,
 				9D7FB9C71A8477FA009DAB74 /* Main.storyboard */,
+				9D314F731A91BD4E0000AD03 /* TaskListTableViewController.h */,
+				9D314F741A91BD4E0000AD03 /* TaskListTableViewController.m */,
+				9D314F761A91BE130000AD03 /* TaskTableCell.xib */,
+				9D314F781A91BF310000AD03 /* taskListTableViewCell.h */,
+				9D314F791A91BF310000AD03 /* taskListTableViewCell.m */,
 				9D7FB9CA1A8477FA009DAB74 /* Images.xcassets */,
 				9D7FB9CC1A8477FA009DAB74 /* LaunchScreen.xib */,
 				9D7FB9C11A8477FA009DAB74 /* CSProject.xcdatamodeld */,
@@ -214,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D7FB9C91A8477FA009DAB74 /* Main.storyboard in Resources */,
+				9D314F771A91BE130000AD03 /* TaskTableCell.xib in Resources */,
 				9D7FB9CE1A8477FA009DAB74 /* LaunchScreen.xib in Resources */,
 				9D7FB9CB1A8477FA009DAB74 /* Images.xcassets in Resources */,
 			);
@@ -233,9 +247,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D314F751A91BD4E0000AD03 /* TaskListTableViewController.m in Sources */,
 				9D7FB9C31A8477FA009DAB74 /* CSProject.xcdatamodeld in Sources */,
 				9D7FB9E51A847FAB009DAB74 /* AddTaskViewControllerTableViewController.m in Sources */,
 				9D7FB9C01A8477FA009DAB74 /* AppDelegate.m in Sources */,
+				9D314F7A1A91BF310000AD03 /* taskListTableViewCell.m in Sources */,
 				9D7FB9C61A8477FA009DAB74 /* ViewController.m in Sources */,
 				9DC0A98E1A8C0F2F0080A6DF /* Task.m in Sources */,
 				9D7FB9BD1A8477FA009DAB74 /* main.m in Sources */,
