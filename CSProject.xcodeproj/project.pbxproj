@@ -20,6 +20,8 @@
 		9D7FB9DA1A8477FA009DAB74 /* CSProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7FB9D91A8477FA009DAB74 /* CSProjectTests.m */; };
 		9D7FB9E51A847FAB009DAB74 /* AddTaskViewControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7FB9E41A847FAB009DAB74 /* AddTaskViewControllerTableViewController.m */; };
 		9DC0A98E1A8C0F2F0080A6DF /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC0A98D1A8C0F2F0080A6DF /* Task.m */; };
+		9DCF81061A96DD02005A657E /* taskData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9DCF81041A96DD02005A657E /* taskData.xcdatamodeld */; };
+		9DCF81091A96E050005A657E /* MasterTaskListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCF81081A96E050005A657E /* MasterTaskListTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,9 @@
 		9D7FB9E41A847FAB009DAB74 /* AddTaskViewControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTaskViewControllerTableViewController.m; sourceTree = "<group>"; };
 		9DC0A98C1A8C0F2F0080A6DF /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Task.h; path = ../Task.h; sourceTree = "<group>"; };
 		9DC0A98D1A8C0F2F0080A6DF /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Task.m; path = ../Task.m; sourceTree = "<group>"; };
+		9DCF81051A96DD02005A657E /* taskData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = taskData.xcdatamodel; sourceTree = "<group>"; };
+		9DCF81071A96E050005A657E /* MasterTaskListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterTaskListTableViewCell.h; sourceTree = "<group>"; };
+		9DCF81081A96E050005A657E /* MasterTaskListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterTaskListTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +111,7 @@
 				9D7FB9E31A847FAA009DAB74 /* AddTaskViewControllerTableViewController.h */,
 				9D7FB9E41A847FAB009DAB74 /* AddTaskViewControllerTableViewController.m */,
 				9D7FB9C71A8477FA009DAB74 /* Main.storyboard */,
+				9DCF81041A96DD02005A657E /* taskData.xcdatamodeld */,
 				9D314F731A91BD4E0000AD03 /* TaskListTableViewController.h */,
 				9D314F741A91BD4E0000AD03 /* TaskListTableViewController.m */,
 				9D314F761A91BE130000AD03 /* TaskTableCell.xib */,
@@ -114,6 +120,8 @@
 				9D7FB9CA1A8477FA009DAB74 /* Images.xcassets */,
 				9D7FB9CC1A8477FA009DAB74 /* LaunchScreen.xib */,
 				9D7FB9C11A8477FA009DAB74 /* CSProject.xcdatamodeld */,
+				9DCF81071A96E050005A657E /* MasterTaskListTableViewCell.h */,
+				9DCF81081A96E050005A657E /* MasterTaskListTableViewCell.m */,
 				9D7FB9BA1A8477FA009DAB74 /* Supporting Files */,
 			);
 			path = CSProject;
@@ -253,8 +261,10 @@
 				9D7FB9C01A8477FA009DAB74 /* AppDelegate.m in Sources */,
 				9D314F7A1A91BF310000AD03 /* taskListTableViewCell.m in Sources */,
 				9D7FB9C61A8477FA009DAB74 /* ViewController.m in Sources */,
+				9DCF81091A96E050005A657E /* MasterTaskListTableViewCell.m in Sources */,
 				9DC0A98E1A8C0F2F0080A6DF /* Task.m in Sources */,
 				9D7FB9BD1A8477FA009DAB74 /* main.m in Sources */,
+				9DCF81061A96DD02005A657E /* taskData.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +482,16 @@
 			);
 			currentVersion = 9D7FB9C21A8477FA009DAB74 /* CSProject.xcdatamodel */;
 			path = CSProject.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		9DCF81041A96DD02005A657E /* taskData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9DCF81051A96DD02005A657E /* taskData.xcdatamodel */,
+			);
+			currentVersion = 9DCF81051A96DD02005A657E /* taskData.xcdatamodel */;
+			path = taskData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

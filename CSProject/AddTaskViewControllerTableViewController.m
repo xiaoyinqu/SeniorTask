@@ -7,6 +7,8 @@
 //
 
 #import "AddTaskViewControllerTableViewController.h"
+#import "Task.h"
+#import <CoreData/CoreData.h>
 
 @interface AddTaskViewControllerTableViewController ()
 
@@ -15,7 +17,8 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *dateEntered;
 @property (weak, nonatomic) IBOutlet UITextField *taskName;
-@property (weak, nonatomic) IBOutlet UITableViewCell *priorityValue;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *priorityValue;
+
 @property (weak, nonatomic) IBOutlet UIButton *createNewTask;
 @end
 
@@ -23,7 +26,35 @@
 
 
 
-- (void)viewDidLoad {
+- (NSManagedObjectContext *)managedObjectContext {
+    NSManagedObjectContext *context = nil;
+    id delegate = [[UIApplication sharedApplication] delegate];
+    if ([delegate performSelector:@selector(managedObjectContext)]) {
+        context = [delegate managedObjectContext];
+    }
+    return context;
+}
+
+//create a new task to
+- (IBAction)createNewTask:(UIButton *)sender {
+    NSManagedObjectContext *context = [self managedObjectContext];
+    
+    // Create a new managed object
+    NSManagedObject *newTask = [NSEntityDescription insertNewObjectForEntityForName:@"Device" inManagedObjectContext:context];
+    
+    
+    [newTask  setValue:self.taskName.text forKey:@"taskName"];
+    [newTask setValue:[NSNumber numberWithDouble: self.priorityValue.selectedSegmentIndex]  forKey:@"taskPriority"];
+    [newTask  setValue:self.datePicker.date forKey:@"taskDueDate"];
+    [newTask setValue:FALSE forKey:@"isComplete"];
+    
+    NSError *error = nil;
+    // Save the object to persistent store
+    if (![context save:&error]) {
+        NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
+    }
+}
+    - (void)viewDidLoad {
     [super viewDidLoad];
     
     // Uncomment the following line to preserve selection between presentations.
@@ -57,7 +88,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 4;
+    return 5;
 }
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -120,14 +151,15 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
+    
+        // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
 
 @end
