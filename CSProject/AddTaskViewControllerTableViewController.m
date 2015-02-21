@@ -48,10 +48,13 @@
     [newTask  setValue:self.datePicker.date forKey:@"taskDueDate"];
     [newTask setValue:FALSE forKey:@"isComplete"];
     
+    
     NSError *error = nil;
     // Save the object to persistent store
     if (![context save:&error]) {
         NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
+    [self dismissViewControllerAnimated:YES completion:nil];
+        
     }
 }
     - (void)viewDidLoad {
