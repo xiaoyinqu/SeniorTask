@@ -40,7 +40,7 @@
     NSManagedObjectContext *context = [self managedObjectContext];
     
     // Create a new managed object
-    NSManagedObject *newTask = [NSEntityDescription insertNewObjectForEntityForName:@"Device" inManagedObjectContext:context];
+    NSManagedObject *newTask = [NSEntityDescription insertNewObjectForEntityForName:@"Task" inManagedObjectContext:context];
     
     
     [newTask  setValue:self.taskName.text forKey:@"taskName"];
@@ -53,11 +53,16 @@
     // Save the object to persistent store
     if (![context save:&error]) {
         NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
-    [self dismissViewControllerAnimated:YES completion:nil];
+        
+    [self.navigationController popViewControllerAnimated:YES];
         
     }
 }
-    - (void)viewDidLoad {
+
+
+
+
+- (void)viewDidLoad {
     [super viewDidLoad];
     
     // Uncomment the following line to preserve selection between presentations.
@@ -73,6 +78,8 @@
     [dateFormat setDateFormat:@"cccc, MMM d, hh:mm aa"];
     NSString *prettyVersion = [dateFormat stringFromDate:myDate];
     self.dateEntered.text = prettyVersion;
+    [self.dateEntered resignFirstResponder];
+
 }
 
 
@@ -93,26 +100,22 @@
     // Return the number of rows in the section.
     return 5;
 }
-- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
+/**- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 44;
 }
 
 
-
-/**- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == 1 && indexPath.row == 3) {
         return 66;
     }
     return 22;
 }
 **/
-
-
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     // Configure the cell...
     

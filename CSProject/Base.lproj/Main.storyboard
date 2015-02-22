@@ -30,7 +30,9 @@
                                                     <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                                                 </textField>
                                             </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dueDate" id="e8o-bY-qzq">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -111,6 +113,7 @@
                                                     </state>
                                                     <connections>
                                                         <action selector="createNewTask:" destination="kzY-YU-JOj" eventType="touchUpInside" id="YQD-uS-BFt"/>
+                                                        <segue destination="4mc-MM-KKI" kind="show" id="uAV-jR-w4Z"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -153,7 +156,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" red="0.51655652139999997" green="0.22843726180000001" blue="0.7576546717" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="taskList" textLabel="1uz-Wv-N64" detailTextLabel="aIP-bJ-SEG" style="IBUITableViewCellStyleValue1" id="E6J-ul-abs">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="1uz-Wv-N64" detailTextLabel="aIP-bJ-SEG" style="IBUITableViewCellStyleValue1" id="E6J-ul-abs">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="E6J-ul-abs" id="ZgN-4R-eu9">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -182,9 +185,11 @@
                     <navigationItem key="navigationItem" id="XMt-11-01C">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="etE-fw-gZv">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ral-fR-svL">
-                                <rect key="frame" x="-23" y="-15" width="83" height="30"/>
+                                <rect key="frame" x="276" y="7" width="83" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Create new">
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="New Task">
+                                    <color key="titleColor" red="0.51655652139999997" green="0.22843726180000001" blue="0.7576546717" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -237,4 +242,7 @@
             <point key="canvasLocation" x="4802" y="545"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="uAV-jR-w4Z"/>
+    </inferredMetricsTieBreakers>
 </document>
