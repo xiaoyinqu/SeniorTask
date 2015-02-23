@@ -10,9 +10,11 @@
 #import "taskListTableViewCell.h"
 #import <CoreData/CoreData.h>
 
-
 @interface TaskListTableViewController ()
+
 @property (strong) NSMutableArray *tasks;
+
+
 @end
 
 @implementation TaskListTableViewController
@@ -75,13 +77,13 @@
     
     // Configure the cell...
     NSManagedObject *task = [self.tasks objectAtIndex:indexPath.row];
-    [cell.textLabel setText:[NSString stringWithFormat:@"%@ %@", [task valueForKey:@"taskName"], [task valueForKey:@"taskDueDate"]]];
+    [cell.textLabel setText:[NSString stringWithFormat:@"%@ %@ %@", [task valueForKey:@"taskName"], [task valueForKey:@"taskDueDate"], [task valueForKey:@"taskPriority"]]];
     
     return cell;
 }
 
 
-//- (taskListTableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//- (taskListTableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NdxSIndexPath *)indexPath {
     //taskListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
     // Configure the cell...

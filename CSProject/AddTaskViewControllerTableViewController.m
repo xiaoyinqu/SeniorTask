@@ -79,6 +79,8 @@
     NSString *prettyVersion = [dateFormat stringFromDate:myDate];
     self.dateEntered.text = prettyVersion;
     [self.dateEntered resignFirstResponder];
+    [self.taskName resignFirstResponder];
+    [self.datePicker resignFirstResponder];
 
 }
 

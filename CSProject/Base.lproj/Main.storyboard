@@ -89,10 +89,9 @@
                                                 <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="wq1-gT-f1Q">
                                                     <rect key="frame" x="126" y="9" width="221" height="29"/>
                                                     <segments>
-                                                        <segment title="1"/>
-                                                        <segment title="2"/>
-                                                        <segment title="3"/>
-                                                        <segment title="4"/>
+                                                        <segment title="Urgent"/>
+                                                        <segment title="Critical"/>
+                                                        <segment title="Normal"/>
                                                     </segments>
                                                     <color key="tintColor" red="0.51655652139999997" green="0.22843726180000001" blue="0.7576546717" alpha="1" colorSpace="calibratedRGB"/>
                                                 </segmentedControl>
