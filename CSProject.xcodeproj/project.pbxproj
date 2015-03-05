@@ -22,6 +22,15 @@
 		9DC0A98E1A8C0F2F0080A6DF /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC0A98D1A8C0F2F0080A6DF /* Task.m */; };
 		9DCF81061A96DD02005A657E /* taskData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9DCF81041A96DD02005A657E /* taskData.xcdatamodeld */; };
 		9DCF81091A96E050005A657E /* MasterTaskListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCF81081A96E050005A657E /* MasterTaskListTableViewCell.m */; };
+		C509EEDE1AA039A500701D90 /* forward-32.png in Resources */ = {isa = PBXBuildFile; fileRef = C509EEDD1AA039A500701D90 /* forward-32.png */; };
+		C509EEE01AA03FFC00701D90 /* forward-25.png in Resources */ = {isa = PBXBuildFile; fileRef = C509EEDF1AA03FFC00701D90 /* forward-25.png */; };
+		C509EEE41AA041BF00701D90 /* clock-24.png in Resources */ = {isa = PBXBuildFile; fileRef = C509EEE31AA041BF00701D90 /* clock-24.png */; };
+		C509EEE61AA041D200701D90 /* clock-96.png in Resources */ = {isa = PBXBuildFile; fileRef = C509EEE51AA041D200701D90 /* clock-96.png */; };
+		C50B7E681AA38CE700BD0C7F /* ok-104.png in Resources */ = {isa = PBXBuildFile; fileRef = C50B7E671AA38CE700BD0C7F /* ok-104.png */; };
+		C5D1EE591AA82BFE004DAC02 /* Edit-100.png in Resources */ = {isa = PBXBuildFile; fileRef = C5D1EE581AA82BFE004DAC02 /* Edit-100.png */; };
+		C5D1EE5B1AA82C39004DAC02 /* DeleteSign-100.png in Resources */ = {isa = PBXBuildFile; fileRef = C5D1EE5A1AA82C39004DAC02 /* DeleteSign-100.png */; };
+		C5D1EE611AA8303D004DAC02 /* complete.png in Resources */ = {isa = PBXBuildFile; fileRef = C5D1EE601AA8303D004DAC02 /* complete.png */; };
+		C5D1EE631AA8305E004DAC02 /* incomplete.png in Resources */ = {isa = PBXBuildFile; fileRef = C5D1EE621AA8305E004DAC02 /* incomplete.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +70,15 @@
 		9DCF81051A96DD02005A657E /* taskData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = taskData.xcdatamodel; sourceTree = "<group>"; };
 		9DCF81071A96E050005A657E /* MasterTaskListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterTaskListTableViewCell.h; sourceTree = "<group>"; };
 		9DCF81081A96E050005A657E /* MasterTaskListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterTaskListTableViewCell.m; sourceTree = "<group>"; };
+		C509EEDD1AA039A500701D90 /* forward-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "forward-32.png"; sourceTree = "<group>"; };
+		C509EEDF1AA03FFC00701D90 /* forward-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "forward-25.png"; sourceTree = "<group>"; };
+		C509EEE31AA041BF00701D90 /* clock-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock-24.png"; sourceTree = "<group>"; };
+		C509EEE51AA041D200701D90 /* clock-96.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock-96.png"; sourceTree = "<group>"; };
+		C50B7E671AA38CE700BD0C7F /* ok-104.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ok-104.png"; sourceTree = "<group>"; };
+		C5D1EE581AA82BFE004DAC02 /* Edit-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Edit-100.png"; sourceTree = "<group>"; };
+		C5D1EE5A1AA82C39004DAC02 /* DeleteSign-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DeleteSign-100.png"; sourceTree = "<group>"; };
+		C5D1EE601AA8303D004DAC02 /* complete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = complete.png; sourceTree = "<group>"; };
+		C5D1EE621AA8305E004DAC02 /* incomplete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = incomplete.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +148,15 @@
 		9D7FB9BA1A8477FA009DAB74 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C5D1EE621AA8305E004DAC02 /* incomplete.png */,
+				C5D1EE601AA8303D004DAC02 /* complete.png */,
+				C5D1EE5A1AA82C39004DAC02 /* DeleteSign-100.png */,
+				C5D1EE581AA82BFE004DAC02 /* Edit-100.png */,
+				C50B7E671AA38CE700BD0C7F /* ok-104.png */,
+				C509EEE51AA041D200701D90 /* clock-96.png */,
+				C509EEE31AA041BF00701D90 /* clock-24.png */,
+				C509EEDF1AA03FFC00701D90 /* forward-25.png */,
+				C509EEDD1AA039A500701D90 /* forward-32.png */,
 				9D7FB9BB1A8477FA009DAB74 /* Info.plist */,
 				9D7FB9BC1A8477FA009DAB74 /* main.m */,
 			);
@@ -234,10 +261,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5D1EE611AA8303D004DAC02 /* complete.png in Resources */,
 				9D7FB9C91A8477FA009DAB74 /* Main.storyboard in Resources */,
 				9D314F771A91BE130000AD03 /* TaskTableCell.xib in Resources */,
 				9D7FB9CE1A8477FA009DAB74 /* LaunchScreen.xib in Resources */,
+				C5D1EE5B1AA82C39004DAC02 /* DeleteSign-100.png in Resources */,
 				9D7FB9CB1A8477FA009DAB74 /* Images.xcassets in Resources */,
+				C5D1EE631AA8305E004DAC02 /* incomplete.png in Resources */,
+				C509EEE01AA03FFC00701D90 /* forward-25.png in Resources */,
+				C5D1EE591AA82BFE004DAC02 /* Edit-100.png in Resources */,
+				C509EEDE1AA039A500701D90 /* forward-32.png in Resources */,
+				C50B7E681AA38CE700BD0C7F /* ok-104.png in Resources */,
+				C509EEE41AA041BF00701D90 /* clock-24.png in Resources */,
+				C509EEE61AA041D200701D90 /* clock-96.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

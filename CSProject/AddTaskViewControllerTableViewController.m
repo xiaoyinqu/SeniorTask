@@ -46,7 +46,7 @@
     [newTask  setValue:self.taskName.text forKey:@"taskName"];
     [newTask setValue:[NSNumber numberWithDouble: self.priorityValue.selectedSegmentIndex]  forKey:@"taskPriority"];
     [newTask  setValue:self.datePicker.date forKey:@"taskDueDate"];
-    [newTask setValue:FALSE forKey:@"isComplete"];
+    [newTask setValue:[NSNumber numberWithBool:NO] forKey:@"isComplete"];
     
     
     NSError *error = nil;

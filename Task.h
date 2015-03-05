@@ -12,9 +12,9 @@
 @property (nonatomic) NSInteger priorityLevel;
 @property (strong, nonatomic) NSString* taskName;
 @property (strong, nonatomic) NSDate* taskDate;
-@property BOOL isCompleted;
+@property NSNumber* isCompleted;
 -(instancetype)initWithTaskName:(NSString*)taskName sinceDate:(NSDate *)anotherDate andPriority:(NSInteger)priority;
--(void)updateTaskInformationWithTaskName:(NSString*)taskName sinceDate:(NSDate *)anotherDate andPriority:(NSInteger )priority andCompleteness: (BOOL)isComplete;
+-(void)updateTaskInformationWithTaskName:(NSString*)taskName sinceDate:(NSDate *)anotherDate andPriority:(NSInteger )priority andCompleteness: (NSNumber *)isComplete;
 -(BOOL)ifTaskComplete;
 -(NSInteger) getTaskPriority;
 

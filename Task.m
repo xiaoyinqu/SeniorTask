@@ -13,11 +13,12 @@
     self.priorityLevel = priority;
     self.taskName = taskName;
     self.taskDate = anotherDate;
+    self.isCompleted = [NSNumber numberWithBool:NO];
     return self;
     
 }
 
--(void)updateTaskInformationWithTaskName:(NSString*)taskName sinceDate:(NSDate *)anotherDate andPriority:(NSInteger )priority andCompleteness: (BOOL)isComplete{
+-(void)updateTaskInformationWithTaskName:(NSString*)taskName sinceDate:(NSDate *)anotherDate andPriority:(NSInteger )priority andCompleteness: (NSNumber *)isComplete{
     self.priorityLevel = priority;
     self.taskName = taskName;
     self.taskDate = anotherDate;
@@ -25,7 +26,7 @@
     
 }
 -(BOOL)ifTaskComplete{
-    return self.isCompleted;
+    return self.isCompleted == [NSNumber numberWithBool:YES];
 }
 
 

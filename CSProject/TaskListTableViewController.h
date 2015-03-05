@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TaskListTableViewController : UITableViewController
+@interface TaskListTableViewController : UITableViewController<UITableViewDataSource,UITableViewDelegate>
+@property (strong, nonatomic) IBOutlet UITableView *feedtableview;
 
 @end
